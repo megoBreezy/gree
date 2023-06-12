@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title your site</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/datepicker.min.css">
+    <link rel="stylesheet" href="css/libs/tom-select.min.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <main id="main">
+      <div class="modal menu-modal" id="menu"> 
+        <div class="modal__inner">
+          <div class="main-container">
+            <button class="modal__close menu__close" type="button">
+              <svg class="icon icon--icon-remove">
+                <use href="img/icons/icons.svg#icon-remove"></use>
+              </svg>
+            </button>
+            <div class="menu-wrap"> 
+              <div class="menu-wrap__col"> 
+                <div class="menu__title">услуги</div>
+                <ul class="nav"> 
+                  <li class="nav__item"><a class="nav__link" href="#">авиаперевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">автомобильные перевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">мультимодальные перевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">железнодорожные перевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">перевозки опасных грузов</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">перевозки тяжеловесных и негабаритных грузов</a></li>
+                </ul>
+              </div>
+              <div class="menu-wrap__col"> 
+                <div class="menu__title">КОМПАНИЯ</div>
+                <ul class="nav"> 
+                  <li class="nav__item"><a class="nav__link" href="#">о компании</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">вакансии</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">новости</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-contacts">
+              <div class="lang lang-mobile">
+                <div class="lang__current">RU
+                  <svg class="icon icon--caret-down">
+                    <use href="img/icons/icons.svg#icon-caret-down"></use>
+                  </svg>
+                </div>
+                <div class="lang__drop">
+                  <ul class="lang__list">
+                    <li class="lang__list-item"><a class="lang__list-link" href="">EN </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu__title">контакты</div>
+              <div class="menu-contacts__inner">
+                <div class="menu-contacts__left">
+                  <div class="menu-contacts__col"> 
+                    <div class="menu-contacts__title">Офис в Республике Беларусь</div>
+                    <div class="menu-contacts__group"> 
+                      <div class="menu-contacts__info">г. Минск, пер. Козлова, 7Г-7</div><a class="menu-contacts__info" href="tel:+375172522225">Тел: +375 (17) 252-22-25</a>
+                    </div>
+                    <div class="menu-contacts__group"> <a class="menu-contacts__info" href="mailto:info@ghtrees.com">info@ghtrees.com</a><a class="menu-contacts__info" href="mailto:sales@ghtrees.com">sales@ghtrees.com</a></div>
+                  </div>
+                  <div class="menu-contacts__col"> 
+                    <div class="menu-contacts__title">Офис в Российской Федерации</div>
+                    <div class="menu-contacts__group"> 
+                      <div class="menu-contacts__info">214013, г. Смоленск <br>ул. Памфилова, 5; офис 217</div><a class="menu-contacts__info" href="tel:+74953239093">Тел: +7(495)323-90-93</a>
+                    </div>
+                    <div class="menu-contacts__group"> 
+                      <div class="menu-contacts__title">Офис в Республике Польша</div>
+                      <div class="menu-contacts__info">02-963 Warszawa,  <br>ul. Zygmunta Vogla 28 / 02.5</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-contacts__right"><a class="menu-contacts__phone" href="tel:+375172522225">+375(17)252-22-25</a><a class="menu-contacts__phone" href="tel:+74953239093">+7(495)323-90-93</a>
+                  <div class="menu-contacts__mobile"> 
+                    <ul class="contacts-list">
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--phone">
+                            <use href="img/icons/icons.svg#icon-phone"></use>
+                          </svg></a></li>
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--viber">
+                            <use href="img/icons/icons.svg#icon-viber"></use>
+                          </svg></a></li>
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--skype">
+                            <use href="img/icons/icons.svg#icon-skype"></use>
+                          </svg></a></li>
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--telegram">
+                            <use href="img/icons/icons.svg#icon-telegram"></use>
+                          </svg></a></li>
+                    </ul>
+                    <ul class="social"> 
+                      <li class="social__item"><a class="social__link" href="">FACEBOOK</a></li>
+                      <li class="social__item"><a class="social__link" href="">INSTAGRAM</a></li>
+                      <li class="social__item"><a class="social__link" href="">LINKEDIN</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-contacts__desk">
+                    <div class="menu-contacts__label">Для сотрудничества:</div><a class="menu-contacts__mail" href="mailto:info@gthrees.com">info@gthrees.com</a>
+                    <div class="menu-contacts__label">Отдел продаж:</div><a class="menu-contacts__mail" href="mailto:sales@gthrees.com">sales@gthrees.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header"> 
+        <div class="main-container"> <a class="header__logo" href="index.html">
+            <svg class="icon icon--logo-color">
+              <use href="img/icons/icons.svg#icon-logo-color"></use>
+            </svg>
+            <svg class="icon icon--logo-small">
+              <use href="img/icons/icons.svg#icon-logo-small"></use>
+            </svg></a>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="">Наши услуги
+                <svg class="icon icon--caret-down">
+                  <use href="img/icons/icons.svg#icon-caret-down"></use>
+                </svg></a>
+              <div class="menu__drop">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">Авиаперевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">автомобильные перевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">мультимодальные перевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">железнодорожные перевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">перевозки тяжеловесных и негабаритных грузов</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">перевозки опасных грузов</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="">Вакансии</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+          </ul><a class="header__phone" href="tel:+375(29)546-25-67"><span class="header__phone-icon"></span><span class="header__phone-tel">+375(29)546-25-67 </span></a>
+          <div class="lang header__lang">
+            <div class="lang__current">RU
+              <svg class="icon icon--caret-down">
+                <use href="img/icons/icons.svg#icon-caret-down"></use>
+              </svg>
+            </div>
+            <div class="lang__drop">
+              <ul class="lang__list">
+                <li class="lang__list-item"><a class="lang__list-link" href="">EN </a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="header__btn-get-a-quote modal-btn" type="button" data-target="bill"> <span>Получить расчёт</span>
+            <svg class="icon icon--arrow-2-top-right-45">
+              <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+            </svg>
+          </button>
+          <button class="header__menu-btn modal-btn" data-target="menu"><span> </span><span> </span><span> </span></button>
+        </div>
+      </header>
+      <div class="scroll-container">
+        <div class="bill-wrapper" style="background-image: url('img/main-bg.webp')">
+          <div class="main-container"> 
+            <div class="bill">
+              <h3 class="bill-title">расчёт стоимости</h3>
+              <div class="bill-steps">
+                <div class="bill-steps__item is-active"> 
+                  <div class="bill-steps__circle"> </div>
+                  <div class="bill-steps__name">личные данные</div>
+                </div>
+                <div class="bill-steps__item"> 
+                  <div class="bill-steps__circle"> </div>
+                  <div class="bill-steps__name">направления</div>
+                </div>
+                <div class="bill-steps__item"> 
+                  <div class="bill-steps__circle"> </div>
+                  <div class="bill-steps__name">параметры груза</div>
+                </div>
+                <div class="bill-steps__item"> 
+                  <div class="bill-steps__circle"> </div>
+                  <div class="bill-steps__name">загрузка</div>
+                </div>
+                <div class="bill-steps__item"> 
+                  <div class="bill-steps__circle"> </div>
+                  <div class="bill-steps__name">условия поставки</div>
+                </div>
+                <div class="bill-steps__item"> 
+                  <div class="bill-steps__circle"> </div>
+                  <div class="bill-steps__name">комментарий</div>
+                </div>
+              </div>
+              <div class="bill-body"> 
+                <div class="bill-navigation"> 
+                  <button class="bill-navigation__btn bill-navigation__back" type="button">
+                    <svg class="icon icon--icon-arrow-3-left">
+                      <use href="img/icons/icons.svg#icon-arrow-3-left"></use>
+                    </svg>
+                  </button>
+                  <button class="bill-navigation__btn bill-navigation__close" type="button">
+                    <svg class="icon icon--icon-remove">
+                      <use href="img/icons/icons.svg#icon-remove"></use>
+                    </svg>
+                  </button>
+                </div>
+                <form action="#"> 
+                  <div class="bill-form">
+                    <div class="bill-tab is-active">
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Ваше имя</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">E-mail</label>
+                          <input class="form-group__input" type="email">
+                        </div>
+                      </div>
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Контактный телефон</label>
+                          <input class="form-group__input phone-mask" type="text">
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">Название компании</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bill-tab">
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Откуда (страна/город)</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">Куда (страна/город)</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                      </div>
+                      <div class="bill-row">
+                        <div class="form-group"> 
+                          <label class="form-group__label">Места таможенного оформления</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bill-tab">
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Наименование груза</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">Код ТНВЭД</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                      </div>
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Вес груза (брутто)</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">Объём груза</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                      </div>
+                      <div class="bill-row">
+                        <div class="form-group"> 
+                          <label class="form-group__label">Упаковка груза</label>
+                          <select class="js-select form-group__select">
+                            <option value="1">Навалом</option>
+                            <option value="2">В коробках без паллет</option>
+                            <option value="3">В коробках на паллетах</option>
+                            <option value="4">На паллетах</option>
+                            <option value="5">Мешки</option>
+                            <option value="6">Биг-бэги</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bill-tab">
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Тип транспорта</label>
+                          <select class="js-select form-group__select">
+                            <option value="1">Еврофура 82 см3</option>
+                            <option value="2">фура</option>
+                            <option value="3">Повозка</option>
+                          </select>
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">Тип загрузки</label>
+                          <select class="js-select form-group__select">
+                            <option value="1">Задняя</option>
+                            <option value="2">Передняя</option>
+                            <option value="3">С севера</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Выбрать дату готовности груза</label>
+                          <div class="form-group__icon">
+                            <svg class="icon icon--icon-calendar">
+                              <use href="img/icons/icons.svg#icon-calendar"></use>
+                            </svg>
+                          </div>
+                          <input class="form-group__input datepicker-single" type="text">
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">Желаемый ориентир по ставке</label>
+                          <input class="form-group__input" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bill-tab">
+                      <div class="bill-row bill-column"> 
+                        <div class="form-group"> 
+                          <label class="form-group__label">Условия поставки</label>
+                          <select class="js-select form-group__select">
+                            <option value="1">EXW</option>
+                            <option value="2">WXW </option>
+                            <option value="3">EXE</option>
+                          </select>
+                          <div class="form-group__note">*Только для мультимодальных перевозок</div>
+                        </div>
+                        <div class="form-group"> 
+                          <label class="form-group__label">Кто оформляет EX</label>
+                          <select class="js-select form-group__select">
+                            <option value="1">Отправитель</option>
+                            <option value="2">Получатель</option>
+                            <option value="3">Родственик</option>
+                          </select>
+                          <div class="form-group__note">*Только для оформления из Европы</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bill-tab">
+                      <div class="bill-row">
+                        <div class="form-group"> 
+                          <label class="form-group__label">Ваш комментарий</label>
+                          <textarea class="form-group__textarea" name="" cols="30" rows="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="bill-row">
+                        <div class="form-group">
+                          <div class="file-drop-area form-group__file"><span class="file-msg">Добавьте файл сюда<span class="file-msg__clip">
+                                <svg class="icon icon--icon-file">
+                                  <use href="img/icons/icons.svg#icon-file"></use>
+                                </svg></span></span>
+                            <input class="file-input" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx" multiple="">
+                          </div>
+                        </div>
+                        <div class="agree-row">
+                          <label class="check">
+                            <input class="check__input" type="checkbox" name=""><span class="check__box"></span>
+                          </label><span>Я согласен с условиями <a href="#">Политики конфиденциальности</a> и <a href="#">Обработки персональных данных</a>. </span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="bill-next" type="button">далее</button>
+                    <button class="bill-submit" type="button">получить расчёт
+                      <svg class="icon icon--arrow-2-top-right-45">
+                        <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                      </svg>
+                    </button>
+                    <div class="bill-footer"> 
+                      <div>
+                         Вы спешите?<br>Нажмите на «Краткую форму»</div>
+                      <div> 
+                        <button class="short-form modal-btn" type="button" data-target="bill">КРАТКАЯ ФОРМА
+                          <svg class="icon icon--arrow-2-top-right-45">
+                            <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-bill" id="bill">
+        <div class="modal__inner">
+          <div class="modal__close btn-close">
+            <svg class="icon icon--icon-remove">
+              <use href="img/icons/icons.svg#icon-remove"></use>
+            </svg>
+          </div>
+          <div class="modal__body">
+            <form class="modal-form" action="#"> 
+              <div class="bill-row bill-column"> 
+                <div class="form-group"> 
+                  <label class="form-group__label">Ваше имя</label>
+                  <input class="form-group__input" type="text">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-group__label">E-mail или телефон</label>
+                  <input class="form-group__input" type="text">
+                </div>
+              </div>
+              <div class="bill-row bill-column"> 
+                <div class="form-group"> 
+                  <label class="form-group__label">Откуда</label>
+                  <input class="form-group__input" type="text">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-group__label">Куда</label>
+                  <input class="form-group__input" type="text">
+                </div>
+              </div>
+              <div class="bill-row">
+                <div class="form-group"> 
+                  <label class="form-group__label">Ваш комментарий</label>
+                  <textarea class="form-group__textarea" name="" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="bill-row">
+                <div class="form-group">
+                  <div class="file-drop-area form-group__file"><span class="file-msg">Добавьте файл сюда<span class="file-msg__clip">
+                        <svg class="icon icon--icon-file">
+                          <use href="img/icons/icons.svg#icon-file"></use>
+                        </svg></span></span>
+                    <input class="file-input" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx" multiple="">
+                  </div>
+                  <div class="agree-row">
+                    <label class="check">
+                      <input class="check__input" type="checkbox" name=""><span class="check__box"></span>
+                    </label><span>Я согласен с условиями <a href="#">Политики конфиденциальности</a> и <a href="#">Обработки персональных данных</a>. </span>
+                  </div>
+                </div>
+              </div>
+              <button class="bill-submit" type="button">получить расчёт
+                <svg class="icon icon--arrow-2-top-right-45">
+                  <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                </svg>
+              </button>
+              <div class="modal-form__footer"> 
+                <div>
+                   Полную информацию можно заполнить<br>нажимая на кнопку «Полная форма»</div>
+                <div> 
+                  <button class="short-form modal__close" type="button">полная ФОРМА
+                    <svg class="icon icon--arrow-2-top-right-45">
+                      <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal map-modal" id="map">
+        <div class="modal__inner">
+          <div class="modal__close btn-close">
+            <svg class="icon icon--icon-remove">
+              <use href="img/icons/icons.svg#icon-remove"></use>
+            </svg>
+          </div>
+          <div class="modal__body"> 
+            <div class="modal-title">Расположение на карте</div>
+            <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63278.058879325705!2d27.537898399121385!3d53.885806675663005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sua!4v1685907259767!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/vendor/tom-select.complete.min.js"></script>
+    <script src="js/vendor/locomotive-scroll.min.js"></script>
+    <script src="js/vendor/inputmask.js"></script>
+    <script src="js/vendor/inputmask.js"></script>
+    <script src="js/vendor/countUp.js"></script>
+    <script src="js/vendor/gsap.min.js"></script>
+    <script src="js/vendor/ScrollTrigger.min.js"></script>
+    <script src="js/vendor/Draggable.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

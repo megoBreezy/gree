@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title your site</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/datepicker.min.css">
+    <link rel="stylesheet" href="css/libs/tom-select.min.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <main id="main">
+      <div class="modal menu-modal" id="menu"> 
+        <div class="modal__inner">
+          <div class="main-container">
+            <button class="modal__close menu__close" type="button">
+              <svg class="icon icon--icon-remove">
+                <use href="img/icons/icons.svg#icon-remove"></use>
+              </svg>
+            </button>
+            <div class="menu-wrap"> 
+              <div class="menu-wrap__col"> 
+                <div class="menu__title">услуги</div>
+                <ul class="nav"> 
+                  <li class="nav__item"><a class="nav__link" href="#">авиаперевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">автомобильные перевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">мультимодальные перевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">железнодорожные перевозки</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">перевозки опасных грузов</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">перевозки тяжеловесных и негабаритных грузов</a></li>
+                </ul>
+              </div>
+              <div class="menu-wrap__col"> 
+                <div class="menu__title">КОМПАНИЯ</div>
+                <ul class="nav"> 
+                  <li class="nav__item"><a class="nav__link" href="#">о компании</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">вакансии</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">новости</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-contacts">
+              <div class="lang lang-mobile">
+                <div class="lang__current">RU
+                  <svg class="icon icon--caret-down">
+                    <use href="img/icons/icons.svg#icon-caret-down"></use>
+                  </svg>
+                </div>
+                <div class="lang__drop">
+                  <ul class="lang__list">
+                    <li class="lang__list-item"><a class="lang__list-link" href="">EN </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu__title">контакты</div>
+              <div class="menu-contacts__inner">
+                <div class="menu-contacts__left">
+                  <div class="menu-contacts__col"> 
+                    <div class="menu-contacts__title">Офис в Республике Беларусь</div>
+                    <div class="menu-contacts__group"> 
+                      <div class="menu-contacts__info">г. Минск, пер. Козлова, 7Г-7</div><a class="menu-contacts__info" href="tel:+375172522225">Тел: +375 (17) 252-22-25</a>
+                    </div>
+                    <div class="menu-contacts__group"> <a class="menu-contacts__info" href="mailto:info@ghtrees.com">info@ghtrees.com</a><a class="menu-contacts__info" href="mailto:sales@ghtrees.com">sales@ghtrees.com</a></div>
+                  </div>
+                  <div class="menu-contacts__col"> 
+                    <div class="menu-contacts__title">Офис в Российской Федерации</div>
+                    <div class="menu-contacts__group"> 
+                      <div class="menu-contacts__info">214013, г. Смоленск <br>ул. Памфилова, 5; офис 217</div><a class="menu-contacts__info" href="tel:+74953239093">Тел: +7(495)323-90-93</a>
+                    </div>
+                    <div class="menu-contacts__group"> 
+                      <div class="menu-contacts__title">Офис в Республике Польша</div>
+                      <div class="menu-contacts__info">02-963 Warszawa,  <br>ul. Zygmunta Vogla 28 / 02.5</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-contacts__right"><a class="menu-contacts__phone" href="tel:+375172522225">+375(17)252-22-25</a><a class="menu-contacts__phone" href="tel:+74953239093">+7(495)323-90-93</a>
+                  <div class="menu-contacts__mobile"> 
+                    <ul class="contacts-list">
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--phone">
+                            <use href="img/icons/icons.svg#icon-phone"></use>
+                          </svg></a></li>
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--viber">
+                            <use href="img/icons/icons.svg#icon-viber"></use>
+                          </svg></a></li>
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--skype">
+                            <use href="img/icons/icons.svg#icon-skype"></use>
+                          </svg></a></li>
+                      <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                          <svg class="icon icon--telegram">
+                            <use href="img/icons/icons.svg#icon-telegram"></use>
+                          </svg></a></li>
+                    </ul>
+                    <ul class="social"> 
+                      <li class="social__item"><a class="social__link" href="">FACEBOOK</a></li>
+                      <li class="social__item"><a class="social__link" href="">INSTAGRAM</a></li>
+                      <li class="social__item"><a class="social__link" href="">LINKEDIN</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-contacts__desk">
+                    <div class="menu-contacts__label">Для сотрудничества:</div><a class="menu-contacts__mail" href="mailto:info@gthrees.com">info@gthrees.com</a>
+                    <div class="menu-contacts__label">Отдел продаж:</div><a class="menu-contacts__mail" href="mailto:sales@gthrees.com">sales@gthrees.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header"> 
+        <div class="main-container"> <a class="header__logo" href="index.html">
+            <svg class="icon icon--logo-color">
+              <use href="img/icons/icons.svg#icon-logo-color"></use>
+            </svg>
+            <svg class="icon icon--logo-small">
+              <use href="img/icons/icons.svg#icon-logo-small"></use>
+            </svg></a>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="">Наши услуги
+                <svg class="icon icon--caret-down">
+                  <use href="img/icons/icons.svg#icon-caret-down"></use>
+                </svg></a>
+              <div class="menu__drop">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">Авиаперевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">автомобильные перевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">мультимодальные перевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">железнодорожные перевозки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">перевозки тяжеловесных и негабаритных грузов</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="">перевозки опасных грузов</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="">Вакансии</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+          </ul><a class="header__phone" href="tel:+375(29)546-25-67"><span class="header__phone-icon"></span><span class="header__phone-tel">+375(29)546-25-67 </span></a>
+          <div class="lang header__lang">
+            <div class="lang__current">RU
+              <svg class="icon icon--caret-down">
+                <use href="img/icons/icons.svg#icon-caret-down"></use>
+              </svg>
+            </div>
+            <div class="lang__drop">
+              <ul class="lang__list">
+                <li class="lang__list-item"><a class="lang__list-link" href="">EN </a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="header__btn-get-a-quote modal-btn" type="button" data-target="bill"> <span>Получить расчёт</span>
+            <svg class="icon icon--arrow-2-top-right-45">
+              <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+            </svg>
+          </button>
+          <button class="header__menu-btn modal-btn" data-target="menu"><span> </span><span> </span><span> </span></button>
+        </div>
+      </header>
+      <div class="scroll-container">
+        <div class="page-banner"> 
+          <div class="page-banner__bg"> <img src="img/banner/banner-1.jpg" alt="banner"></div>
+          <div class="main-container"> 
+            <div class="page-banner__inner">
+              <h1 class="page-banner__title fade-left">услуги</h1>
+              <div class="page-banner__text fade-right" data-delay="0.3">
+                <p>Мы предлагаем эффективные решения, основываясь на нашем опыте в следующих областях: транспортно-экспедиционное обслуживание клиентов, контрактная логистика и оптимизация цепочек поставок.</p>
+              </div><a class="page-banner__link fade-left" href="#" data-delay="0.4"><span class="page-banner__link-text">получить консультацию</span>
+                <svg class="icon icon--arrow-2-top-right-45">
+                  <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                </svg></a>
+            </div>
+            <ul class="social page-banner__social fade-left" data-delay="0.5">
+              <li class="social__item"><a class="social__link" href="">FACEBOOK</a></li>
+              <li class="social__item"><a class="social__link" href="">INSTAGRAM</a></li>
+              <li class="social__item"><a class="social__link" href="">LINKEDIN</a></li>
+            </ul>
+          </div>
+          <ul class="contacts-list contacts-list--vertical page-banner__contacts-list fade-left" data-delay="0.7">
+            <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                <svg class="icon icon--phone">
+                  <use href="img/icons/icons.svg#icon-phone"></use>
+                </svg></a></li>
+            <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                <svg class="icon icon--viber">
+                  <use href="img/icons/icons.svg#icon-viber"></use>
+                </svg></a></li>
+            <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                <svg class="icon icon--skype">
+                  <use href="img/icons/icons.svg#icon-skype"></use>
+                </svg></a></li>
+            <li class="contacts-list__item"><a class="contacts-list__link" href="">
+                <svg class="icon icon--telegram">
+                  <use href="img/icons/icons.svg#icon-telegram"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <section class="section-services">
+          <div class="main-container"> 
+            <h2 class="section__title animate">Наши услуги</h2>
+            <div class="swiper services-slider fade-left">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="services-slider__item" href="#">
+                    <div class="services-slider__title">Авиаперевозки</div>
+                    <div class="services-slider__img"><img src="img/services/services-1.jpg" alt=""></div>
+                    <div class="services-slider__text"> 
+                      <p>Осуществляем доставку грузов от пункта отправления до пункта назначения в срок не более 72 часов.</p>
+                    </div></a></div>
+                <div class="swiper-slide"><a class="services-slider__item" href="#">
+                    <div class="services-slider__title">Автомобильные перевозки</div>
+                    <div class="services-slider__img"><img src="img/services/services-2.jpg" alt=""></div>
+                    <div class="services-slider__text"> 
+                      <p>Осуществляем доставку грузов от пункта отправления до пункта назначения в срок не более 72 часов.</p>
+                    </div></a></div>
+                <div class="swiper-slide"><a class="services-slider__item" href="#">
+                    <div class="services-slider__title">Мультимодальные перевозки</div>
+                    <div class="services-slider__img"><img src="img/services/services-3.jpg" alt=""></div>
+                    <div class="services-slider__text"> 
+                      <p>Осуществляем доставку грузов от пункта отправления до пункта назначения в срок не более 72 часов.</p>
+                    </div></a></div>
+                <div class="swiper-slide"><a class="services-slider__item" href="#">
+                    <div class="services-slider__title">Железнодорожные перевозки</div>
+                    <div class="services-slider__img"><img src="img/services/services-4.jpg" alt=""></div>
+                    <div class="services-slider__text"> 
+                      <p>Осуществляем доставку грузов от пункта отправления до пункта назначения в срок не более 72 часов.</p>
+                    </div></a></div>
+                <div class="swiper-slide"><a class="services-slider__item" href="#">
+                    <div class="services-slider__title">Перевозки тяжеловесных и негабаритных грузов</div>
+                    <div class="services-slider__img"><img src="img/services/services-5.jpg" alt=""></div>
+                    <div class="services-slider__text"> 
+                      <p>Осуществляем доставку грузов от пункта отправления до пункта назначения в срок не более 72 часов.</p>
+                    </div></a></div>
+                <div class="swiper-slide"><a class="services-slider__item" href="#">
+                    <div class="services-slider__title">Перевозки опасных грузов</div>
+                    <div class="services-slider__img"><img src="img/services/services-6.jpg" alt=""></div>
+                    <div class="services-slider__text"> 
+                      <p>Осуществляем доставку грузов от пункта отправления до пункта назначения в срок не более 72 часов.</p>
+                    </div></a></div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section-faq"> 
+          <div class="main-container"> 
+            <h2 class="section__title">Часто спрашивают</h2>
+            <ul class="accordion">
+              <li class="accordion__item fade-left">
+                <div class="accordion__header">Как застрахован груз на международных грузоперевозках?<span class="accordion__header-icon">
+                    <svg class="icon icon--arrow-2-top-right-45">
+                      <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                    </svg></span></div>
+                <div class="accordion__body">
+                  <div class="accordion__inner">
+                    <p>Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента.</p>
+                    <p>Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме.</p>
+                    <p>Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item fade-left">
+                <div class="accordion__header">Как застрахован груз на международных грузоперевозках?<span class="accordion__header-icon">
+                    <svg class="icon icon--arrow-2-top-right-45">
+                      <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                    </svg></span></div>
+                <div class="accordion__body">
+                  <div class="accordion__inner">
+                    <p>Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента.</p>
+                    <p>Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме.</p>
+                    <p>Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item fade-left">
+                <div class="accordion__header">Как застрахован груз на международных грузоперевозках?<span class="accordion__header-icon">
+                    <svg class="icon icon--arrow-2-top-right-45">
+                      <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                    </svg></span></div>
+                <div class="accordion__body">
+                  <div class="accordion__inner">
+                    <p>Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента.</p>
+                    <p>Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме.</p>
+                    <p>Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item fade-left">
+                <div class="accordion__header">Как застрахован груз на международных грузоперевозках?<span class="accordion__header-icon">
+                    <svg class="icon icon--arrow-2-top-right-45">
+                      <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                    </svg></span></div>
+                <div class="accordion__body">
+                  <div class="accordion__inner">
+                    <p>Наша компания работает на рынке пять лет и за это время мы разработали чётко отлаженные подходы и стандарты по перевозки грузов любым видом транспорта в любом направлении. При этом всегда учитываются все требования и выдвигаемые условия каждого клиента.</p>
+                    <p>Наши специалисты используют индивидуальный подход к каждому клиенту и поэтому все нюансы выясняются еще на стадии оформления заявки на оказание услуги и предварительных консультаций в удаленном режиме.</p>
+                    <p>Осуществляются грузоперевозки исключительно в соответствии с законодательными нормами, с составлением договора.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer class="footer footer-lg"> 
+          <div class="footer-bg"> <img src="img/main-bg.webp" alt="footer-bg"></div>
+          <div class="footer-map parallax-element"><img src="img/map-footer.webp" alt="map"></div>
+          <div class="main-container" id="footer-form">
+            <h3 class="section__title">Связаться с нами</h3>
+            <div class="footer-form"> 
+              <div class="footer-form__left">
+                <p>Оставьте заявку и наш менеджер свяжется с вами <span class="text-green">в ближайшее время</span></p>
+              </div>
+              <div class="footer-form__right"> 
+                <form action="#"> 
+                  <div class="info"> 
+                    <div class="info__col"> 
+                      <input class="info__input" type="text" placeholder="ФИО">
+                    </div>
+                    <div class="info__col"> 
+                      <input class="info__input" type="number" placeholder="Телефон">
+                    </div>
+                  </div>
+                  <div class="info"> 
+                    <div class="info__col"> 
+                      <input class="info__input" type="email" placeholder="E-mail">
+                    </div>
+                    <div class="info__col"> 
+                      <div class="info__label">Услуга</div>
+                      <select class="info__select js-select">
+                        <option value="1">автоперевозки</option>
+                        <option value="2">авиаперевозки</option>
+                        <option value="3">автоперевозки 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="info__col textarea-row" style="height:32px">
+                    <textarea class="info__textarea" name="" cols="30" rows="1" placeholder="Сообщение"></textarea>
+                  </div>
+                  <div class="text-right">
+                    <button class="info-submit" tupe="button"><span class="info-submit__text">отправить заявку</span>
+                      <svg class="icon icon--arrow-2-top-right-45">
+                        <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="main-container">
+            <div class="footer-logo"><img src="img/footer-title.svg" alt="logo"></div>
+            <div class="footer__top"> 
+              <div>
+                <div class="footer__label">Для сотрудничества:</div><a class="footer__link" href="mailto:info@gthrees.com">info@gthrees.com</a>
+              </div>
+              <div class="footer__center"> <a class="footer__subscribe" href="#">
+                  <svg class="icon icon--icon-mail">
+                    <use href="img/icons/icons.svg#icon-mail"></use>
+                  </svg>подписаться на рассылку</a>
+                <div class="footer__phone-cont"><a class="footer__phone" href="tel:+375172522225">+375(17)252-22-25</a><a class="footer__phone" href="tel:+74953239093">+7(495)323-90-93</a></div>
+              </div>
+              <div> 
+                <div class="footer__label">Отдел продаж:</div><a class="footer__link" href="mailto:sales@gthrees.com">sales@gthrees.com</a>
+              </div>
+            </div>
+            <div class="footer__bottom"> 
+              <div class="footer-copy">© 2023, GTHREES </div><a class="footer__vacancy" href="#">Вакансии</a>
+              <div class="footer-dev">
+                <div class="footer-dev__text">Разработано в</div><a class="footer-dev__link" href="#">
+                   <svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.8063 0V14.4571H12.4836V20H0V0H5.8063Z" fill="white"/>
+<path d="M14.2323 20V0H20.0386V20H14.2323Z" fill="white"/>
+<path d="M33.91 9.71429L40.2388 20H33.7938L28.7423 11.4286V20H22.936V0H28.7423V8L33.5035 0H39.9485L33.91 9.71429Z" fill="white"/>
+<path d="M47.1989 12.5143V14.7429H54.7471V20H41.3926V0H54.6019V5.2H47.1989V7.37143H53.8762V12.5143H47.1989Z" fill="white"/>
+<path d="M57.0708 20V0H62.8771V20H57.0708Z" fill="#FF0000"/>
+<path d="M64.6133 0H80V5.54286H75.2098V20H69.4035V5.54286H64.6133V0Z" fill="#FF0000"/>
+</svg></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="modal modal-bill" id="bill">
+        <div class="modal__inner">
+          <div class="modal__close btn-close">
+            <svg class="icon icon--icon-remove">
+              <use href="img/icons/icons.svg#icon-remove"></use>
+            </svg>
+          </div>
+          <div class="modal__body">
+            <form class="modal-form" action="#"> 
+              <div class="bill-row bill-column"> 
+                <div class="form-group"> 
+                  <label class="form-group__label">Ваше имя</label>
+                  <input class="form-group__input" type="text">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-group__label">E-mail или телефон</label>
+                  <input class="form-group__input" type="text">
+                </div>
+              </div>
+              <div class="bill-row bill-column"> 
+                <div class="form-group"> 
+                  <label class="form-group__label">Откуда</label>
+                  <input class="form-group__input" type="text">
+                </div>
+                <div class="form-group"> 
+                  <label class="form-group__label">Куда</label>
+                  <input class="form-group__input" type="text">
+                </div>
+              </div>
+              <div class="bill-row">
+                <div class="form-group"> 
+                  <label class="form-group__label">Ваш комментарий</label>
+                  <textarea class="form-group__textarea" name="" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="bill-row">
+                <div class="form-group">
+                  <div class="file-drop-area form-group__file"><span class="file-msg">Добавьте файл сюда<span class="file-msg__clip">
+                        <svg class="icon icon--icon-file">
+                          <use href="img/icons/icons.svg#icon-file"></use>
+                        </svg></span></span>
+                    <input class="file-input" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx" multiple="">
+                  </div>
+                  <div class="agree-row">
+                    <label class="check">
+                      <input class="check__input" type="checkbox" name=""><span class="check__box"></span>
+                    </label><span>Я согласен с условиями <a href="#">Политики конфиденциальности</a> и <a href="#">Обработки персональных данных</a>. </span>
+                  </div>
+                </div>
+              </div>
+              <button class="bill-submit" type="button">получить расчёт
+                <svg class="icon icon--arrow-2-top-right-45">
+                  <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                </svg>
+              </button>
+              <div class="modal-form__footer"> 
+                <div>
+                   Полную информацию можно заполнить<br>нажимая на кнопку «Полная форма»</div>
+                <div> 
+                  <button class="short-form modal__close" type="button">полная ФОРМА
+                    <svg class="icon icon--arrow-2-top-right-45">
+                      <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal map-modal" id="map">
+        <div class="modal__inner">
+          <div class="modal__close btn-close">
+            <svg class="icon icon--icon-remove">
+              <use href="img/icons/icons.svg#icon-remove"></use>
+            </svg>
+          </div>
+          <div class="modal__body"> 
+            <div class="modal-title">Расположение на карте</div>
+            <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63278.058879325705!2d27.537898399121385!3d53.885806675663005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sua!4v1685907259767!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/vendor/tom-select.complete.min.js"></script>
+    <script src="js/vendor/locomotive-scroll.min.js"></script>
+    <script src="js/vendor/inputmask.js"></script>
+    <script src="js/vendor/inputmask.js"></script>
+    <script src="js/vendor/countUp.js"></script>
+    <script src="js/vendor/gsap.min.js"></script>
+    <script src="js/vendor/ScrollTrigger.min.js"></script>
+    <script src="js/vendor/Draggable.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+.ptl .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  min-height: 40px;
+  min-width: 60px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-angle-down {
+  width: 1.7138671875em;
+}
+
+.icon-angle-left {
+  width: 0.5830078125em;
+}
+
+.icon-angle-right {
+  width: 0.5830078125em;
+}
+
+.icon-angle-up {
+  width: 1.7138671875em;
+}
+
+.icon-arrow-2-down {
+  width: 0.921875em;
+}
+
+.icon-arrow-2-left {
+  width: 1.0849609375em;
+}
+
+.icon-arrow-2-right {
+  width: 1.0849609375em;
+}
+
+.icon-arrow-2-up {
+  width: 0.921875em;
+}
+
+.icon-arrow-3-down {
+  width: 0.69921875em;
+}
+
+.icon-arrow-3-left {
+  width: 1.4296875em;
+}
+
+.icon-arrow-3-right {
+  width: 1.4296875em;
+}
+
+.icon-arrow-3-up {
+  width: 0.69921875em;
+}
+
+.icon-arrow-left {
+  width: 5.955078125em;
+}
+
+.icon-arrow-right {
+  width: 5.955078125em;
+}
+
+.icon-calendar {
+  width: 0.912109375em;
+}
+
+.icon-call {
+  width: 1.099609375em;
+}
+
+.icon-caret-down {
+  width: 1.8154296875em;
+}
+
+.icon-caret-up {
+  width: 1.8154296875em;
+}
+
+.icon-file {
+  width: 0.90234375em;
+}
+
+.icon-logo {
+  width: 5.818359375em;
+}
+
+.icon-logo-color {
+  width: 5.9638671875em;
+}
+
+.icon-logo-small {
+  width: 1.0361328125em;
+}
+
+.icon-logo-title {
+  width: 6.9599609375em;
+}
+
+.icon-viber {
+  width: 0.92578125em;
+}
