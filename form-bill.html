@@ -160,7 +160,7 @@
           <button class="header__menu-btn modal-btn" data-target="menu"><span> </span><span> </span><span> </span></button>
         </div>
       </header>
-      <div class="scroll-container">
+      <div class="scroll-container" data-scroll-container>
         <div class="bill-wrapper" style="background-image: url('img/main-bg.webp')">
           <div class="main-container"> 
             <div class="bill">
@@ -362,7 +362,7 @@
                       </div>
                     </div>
                     <button class="bill-next" type="button">далее</button>
-                    <button class="bill-submit" type="button">получить расчёт
+                    <button class="bill-submit" type="button">Отправить
                       <svg class="icon icon--arrow-2-top-right-45">
                         <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
                       </svg>
@@ -435,7 +435,7 @@
                   </div>
                 </div>
               </div>
-              <button class="bill-submit" type="button">получить расчёт
+              <button class="bill-submit modal-btn" type="button" data-target="done">Отправить
                 <svg class="icon icon--arrow-2-top-right-45">
                   <use href="img/icons/icons.svg#icon-arrow-2-top-right-45"></use>
                 </svg>
@@ -468,6 +468,63 @@
           </div>
         </div>
       </div>
+      <div class="modal modal-sm modal-dialog" id="done">
+        <div class="modal__inner">
+          <div class="modal__close btn-close">
+            <svg class="icon icon--icon-remove">
+              <use href="img/icons/icons.svg#icon-remove"></use>
+            </svg>
+          </div>
+          <div class="modal__body"> 
+            <div class="modal-dialog-icon">
+               <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="39" cy="39" r="37.5" stroke="#6CFF6C" stroke-width="3"/>
+<path d="M32.5 48.1005L23.4 39.0005L20.3667 42.0338L32.5 54.1671L58.5 28.1671L55.4667 25.1338L32.5 48.1005Z" fill="#6CFF6C"/>
+</svg>
+            </div>
+            <h3 class="modal-dialog-title">Спасибо!</h3>
+            <div class="modal-dialog-message">Ваша заявка успешно отправлена.</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-sm modal-dialog" id="error">
+        <div class="modal__inner">
+          <div class="modal__close btn-close">
+            <svg class="icon icon--icon-remove">
+              <use href="img/icons/icons.svg#icon-remove"></use>
+            </svg>
+          </div>
+          <div class="modal__body"> 
+            <div class="modal-dialog-icon">
+               <svg width="79" height="78" viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="39.5" cy="39" r="37.5" stroke="#DC2626" stroke-width="3"/>
+<path d="M54.6668 26.888L51.6118 23.833L39.5002 35.9447L27.3885 23.833L24.3335 26.888L36.4452 38.9997L24.3335 51.1113L27.3885 54.1663L39.5002 42.0547L51.6118 54.1663L54.6668 51.1113L42.5552 38.9997L54.6668 26.888Z" fill="#DC2626"/>
+</svg>
+            </div>
+            <h3 class="modal-dialog-title">Ошибка отправки!</h3>
+            <div class="modal-dialog-message">Произошла ошибка отправки заявки. <span class="modal-dialog-reference">Попробуйте ещё раз.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-sm modal-dialog" id="mailing">
+        <div class="modal__inner">
+          <div class="modal__close btn-close">
+            <svg class="icon icon--icon-remove">
+              <use href="img/icons/icons.svg#icon-remove"></use>
+            </svg>
+          </div>
+          <div class="modal__body"> 
+            <div class="modal-dialog-icon">
+               <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="39" cy="39" r="37.5" stroke="#6CFF6C" stroke-width="3"/>
+<path d="M32.5 48.1005L23.4 39.0005L20.3667 42.0338L32.5 54.1671L58.5 28.1671L55.4667 25.1338L32.5 48.1005Z" fill="#6CFF6C"/>
+</svg>
+            </div>
+            <h3 class="modal-dialog-title">Спасибо!</h3>
+            <div class="modal-dialog-message">Вы успешно подписались на нашу рассылку.</div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="js/vendor/swiper-bundle.min.js"></script>
     <script src="js/vendor/tom-select.complete.min.js"></script>
@@ -478,6 +535,7 @@
     <script src="js/vendor/gsap.min.js"></script>
     <script src="js/vendor/ScrollTrigger.min.js"></script>
     <script src="js/vendor/Draggable.min.js"></script>
+    <script src="js/vendor/datepicker-full.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>
 </html>

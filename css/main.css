@@ -395,7 +395,7 @@ input[type=number] {
     padding-top: 71px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .scroll-container {
     padding-top: 79px;
   }
@@ -635,9 +635,6 @@ h4,
 }
 .link-more:hover {
   color: #99FF99;
-}
-.link-more:hover span {
-  text-decoration: none;
 }
 
 @media (max-width: 375px) {
@@ -1011,7 +1008,7 @@ h4,
   width: 100%;
   height: 100%;
   background: rgba(26, 26, 24, 0.5);
-  z-index: 1000;
+  z-index: 2000;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
@@ -1028,6 +1025,8 @@ h4,
       -ms-flex-align: start;
           align-items: flex-start;
   pointer-events: none;
+  overflow: auto;
+  overflow-y: auto !important;
 }
 @media (min-width: 768px) {
   .modal {
@@ -1037,7 +1036,6 @@ h4,
 .modal--active {
   opacity: 1;
   visibility: visible;
-  overflow: auto;
   pointer-events: all;
 }
 .modal--active .modal__inner {
@@ -1069,12 +1067,11 @@ h4,
 }
 @media (max-width: 768px) {
   .modal.modal-bill {
-    background: transparent;
     padding: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    top: 48px;
+    padding-top: 48px;
   }
   .modal.modal-bill .modal__inner {
     padding-bottom: 40px;
@@ -1173,6 +1170,55 @@ h4,
 }
 .map-modal .modal-title {
   padding: 20px 50px 0 0;
+}
+
+.modal-sm .modal__inner {
+  max-width: 600px;
+}
+
+.modal-dialog .modal__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-dialog-icon {
+  margin-bottom: 40px;
+}
+
+.modal-dialog-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.modal-dialog-message {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #111827;
+}
+
+.modal-dialog-reference {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  display: block;
 }
 
 .quote {
@@ -1325,6 +1371,7 @@ h4,
   border: 0;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 .header__btn-get-a-quote::before {
   content: "";
@@ -1352,7 +1399,7 @@ h4,
           animation: ding 7.1s infinite linear;
 }
 .header__btn-get-a-quote:hover {
-  background: #004891;
+  background: #0050A2;
 }
 .header__menu-btn {
   display: block;
@@ -3780,6 +3827,16 @@ h4,
     padding: 40px;
   }
 }
+@media (max-width: 991px) {
+  .propouse-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .propouse-item__text {
   font-weight: 500;
   line-height: 140%;
@@ -4517,9 +4574,9 @@ h4,
 
 .contacts-bg {
   position: absolute;
-  height: calc(100% - 79px);
+  height: calc(100% - 47px);
   width: 100%;
-  top: 79px;
+  top: 47px;
   z-index: -3;
 }
 .contacts-bg img {
@@ -4527,6 +4584,18 @@ h4,
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+@media (min-width: 1024px) {
+  .contacts-bg {
+    top: 71px;
+    height: calc(100% - 71px);
+  }
+}
+@media (min-width: 1280px) {
+  .contacts-bg {
+    top: 79px;
+    height: calc(100% - 79px);
+  }
 }
 
 .contacts-map {
@@ -4649,14 +4718,14 @@ h4,
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: repeat(1, 1fr);
-  gap: 40px;
+  gap: 30px;
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .contacts-body {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 100px;
     margin-bottom: 8px;
   }
@@ -4879,9 +4948,10 @@ a.contacts__info:hover {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 40px;
+  padding-bottom: 40px;
   min-height: calc(100vh - 70px);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .bill-wrapper {
     min-height: calc(100vh - 79px);
   }
@@ -5101,11 +5171,6 @@ a.contacts__info:hover {
 @media (min-width: 768px) {
   .bill-body {
     padding: 20px 50px;
-  }
-}
-@media (min-width: 1024px) {
-  .bill-body {
-    min-height: 801px;
   }
 }
 
@@ -5574,7 +5639,7 @@ a.contacts__info:hover {
   cursor: pointer;
 }
 .bill-submit:hover {
-  background: #004891;
+  background: #0050A2;
 }
 .bill-submit .icon {
   color: #99FF99;
@@ -6718,6 +6783,20 @@ a.contacts__info:hover {
     height: 128px;
   }
 }
+.about-media__img-sm .about-media__img-inner::after {
+  position: absolute;
+  background: linear-gradient(80.86deg, rgba(0, 59, 119, 0.6) 0%, rgba(0, 59, 119, 0.16) 100%);
+  width: 170%;
+  height: 170%;
+  content: "";
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  transition: 1s all ease;
+}
 @media (max-width: 568px) {
   .about-media__img-lg {
     -ms-grid-row: 1;
@@ -6752,20 +6831,6 @@ a.contacts__info:hover {
        object-position: center;
     height: 100%;
   }
-}
-.about-media__img-inner::after {
-  position: absolute;
-  background: linear-gradient(80.86deg, rgba(0, 59, 119, 0.6) 0%, rgba(0, 59, 119, 0.16) 100%);
-  width: 170%;
-  height: 170%;
-  content: "";
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-  transition: 1s all ease;
 }
 
 .wrapper-gray {
