@@ -1206,7 +1206,7 @@ h4,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 11px 0 57px;
+  padding: 11px 20px 57px;
 }
 @media (min-width: 768px) {
   .modal-dialog .modal__body {
