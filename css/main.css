@@ -1172,6 +1172,12 @@ h4,
   padding: 20px 50px 0 0;
 }
 
+.modal-sm {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
 .modal-sm .modal__inner {
   max-width: 600px;
 }
@@ -1191,6 +1197,11 @@ h4,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 568px) {
+  .modal-dialog .modal__body {
+    padding-top: 0;
+  }
+}
 
 .modal-dialog-icon {
   margin-bottom: 40px;
@@ -1198,7 +1209,7 @@ h4,
 
 .modal-dialog-title {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 140%;
   margin-top: 0;
   margin-bottom: 18px;
@@ -1206,13 +1217,23 @@ h4,
   text-transform: uppercase;
   color: #000000;
 }
+@media (min-width: 568px) {
+  .modal-dialog-title {
+    font-size: 24px;
+  }
+}
 
 .modal-dialog-message {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
   text-align: center;
   color: #111827;
+}
+@media (min-width: 568px) {
+  .modal-dialog-message {
+    font-size: 18px;
+  }
 }
 
 .modal-dialog-reference {
