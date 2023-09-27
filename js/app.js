@@ -1,11 +1,4 @@
-window.addEventListener('beforeunload', function() {
-	document.body.style.opacity = 0;
-	window.scrollTo(0, 0);
-
-});
-
 window.addEventListener("DOMContentLoaded", () => {
-  
 	let locoScroll = null;
   var scrollContainer = document.querySelector('[data-scroll-container]');
 	let updateScroll = function updateScroll(scrollContainer) {
@@ -17,7 +10,9 @@ window.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(Draggable);
 
   function initScroll() {
-    var scrollContainer = document.querySelector(".scroll-container")
+    var scrollContainer = document.querySelector(".scroll-container");
+
+    if(window.innerWidth < 767) return
     locoScroll = new LocomotiveScroll({
       el: scrollContainer,
       smooth: true,
@@ -481,26 +476,26 @@ window.addEventListener("DOMContentLoaded", () => {
     
     if (window.innerWidth > 767) {
       var scrollTriggers = document.querySelectorAll('.scroll-trigger');
-
-      scrollTriggers.forEach(item => {
-        gsap.to(scrollTriggers, {
-          scrollTrigger: {
-            scroll: scrollContainer,
-            trigger: item,
-            start: "top center",
-            end: "bottom 80%",
-            onEnter: () => {
-              let targetSlide = item.getAttribute('data-slide');
-              yearSwiper.slideTo(targetSlide - 1);
+      setTimeout(() => {
+        scrollTriggers.forEach(item => {
+          gsap.to(item, {
+            scrollTrigger: {
+              scroll: scrollContainer,
+              trigger: item,
+              start: "top center",
+              end: "bottom 80%",
+              onEnter: () => {
+                let targetSlide = item.getAttribute('data-slide');
+                yearSwiper.slideTo(targetSlide - 1);
+              },
+              onEnterBack: () => {
+                let targetSlide = item.getAttribute('data-slide');
+                yearSwiper.slideTo(targetSlide - 1);
+              }
             },
-            onEnterBack: () => {
-              let targetSlide = item.getAttribute('data-slide');
-              yearSwiper.slideTo(targetSlide - 1);
-            }
-          },
+          });
         });
-      });
-
+      }, 100);
     }
   }
 
@@ -526,19 +521,34 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // counUp
   if (document.querySelector('.counter-animate')) {
-    const pure = new PureCounter({
-      selector: ".counter-animate",
-      start: 0,
-      duration: 1,
-      delay: 10,
-      once: true,
-      pulse: false,
-      decimals: 0,
-      legacy: true,
-      filesizing: false,
-      currency: false,
-      separator: '9 999',
-    });
+    function initCounter() {
+      const counters = document.querySelectorAll('.counter-animate');
+      counters.forEach(counter => {
+        gsap.from(counter,{
+          textContent: "0",
+          duration: 2,
+          ease: "power1.inOut",
+          modifiers: {
+            textContent: value => formatNumber(value)
+          },
+          scrollTrigger: {
+            scroller: scrollContainer,
+            trigger: ".achievements-section",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          }
+        });
+        
+      });
+    }
+
+    function formatNumber(value) {
+      let integerValue = Math.floor(value);
+      return integerValue.toLocaleString('en-US').replace(/,/g, ' ');
+    }
+    setTimeout(() => {
+      initCounter();
+    }, 300);
   }
 
 	//header
